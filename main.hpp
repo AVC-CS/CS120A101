@@ -16,7 +16,7 @@ int mycstrlen(char src[])
 	 * Code your program here
 	 ***************************************************/
 }
-int mycstrcpy(char src[], char target[])
+int mycstrcpy(char target[], char src[])
 {
 	/***************************************************
 	 * Do not use string class type
@@ -24,7 +24,7 @@ int mycstrcpy(char src[], char target[])
 	 * Code your program here
 	 ***************************************************/
 }
-int mycstrcat(char src[], char target[])
+int mycstrcat(char target[], char src[])
 {
 	/***************************************************
 	 * Do not use string class type

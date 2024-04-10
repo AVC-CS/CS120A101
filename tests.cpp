@@ -14,7 +14,7 @@ TEST_CASE("Ex1 strlen()", "[example]")
 	cout << "The length of source string " << srclen << endl;
 	REQUIRE(srclen == 9);
 
-	mycstrcpy(source, target);
+	mycstrcpy(target, source);
 	tgtlen = mycstrlen(target);
 	cout << "The length of target string " << tgtlen << endl;
 	cout << "The Target String is " << target << endl;
@@ -30,7 +30,7 @@ TEST_CASE("Ex2 strcat()", "[example]")
 	int srclen;
 	char source[100] = "Chocolate\0";
 	char target[100] = "Chips\0";
-	srclen = mycstrcat(source, target);
+	srclen = mycstrcat(target, source);
 	cout << "The length of source string " << srclen << endl;
 	cout << "The Concatenated String is " << source << endl;
 	REQUIRE(srclen == 14);

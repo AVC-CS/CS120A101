@@ -27,13 +27,13 @@ TEST_CASE("Ex1 strlen()", "[example]")
 // tests for exercise 2
 TEST_CASE("Ex2 strcat()", "[example]")
 {
-	int srclen;
-	char source[100] = "Chocolate\0";
-	char target[100] = "Chips\0";
-	srclen = mycstrcat(target, source);
-	cout << "The length of source string " << srclen << endl;
-	cout << "The Concatenated String is " << source << endl;
-	REQUIRE(srclen == 14);
-	REQUIRE(srclen == strlen(source));
-	REQUIRE(strcmp(source, "ChocolateChips") == 0);
+	int tgtlen;
+	char source[100] = "Chips\0";
+	char target[100] = "Chocolate\0";
+	tgtlen = mycstrcat(target, source);
+	cout << "The length of target string " << tgtlen << endl;
+	cout << "The Concatenated String is " << target << endl;
+	REQUIRE(tgtlen == 14);
+	REQUIRE(tgtlen == strlen(target));
+	REQUIRE(strcmp(target, "ChocolateChips") == 0);
 }
